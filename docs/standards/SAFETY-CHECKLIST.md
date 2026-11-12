@@ -84,8 +84,8 @@ This checklist is a starting point, not a certification or substitute for a proj
 
 A checked box means there is evidence for the control in the specific project and environment. It is not enough that the design document mentions it.
 
-**Review date:**  
-**Project/version:**  
-**Reviewer:**  
-**Exceptions and residual risks:**  
-**Evidence links:**  
+**Review date:** Not yet reviewed
+**Project/version:** To be recorded
+**Reviewer:** To be recorded
+**Exceptions and residual risks:** To be recorded
+**Evidence links:** To be recorded
