@@ -17,16 +17,20 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
 
-      - name: Check trailing whitespace and merge markers
+      - name: Check conflict markers and whitespace
         shell: bash
         run: |
           set -euo pipefail
+
           if git grep -n -I -E '^(<<<<<<< |=======|>>>>>>> )' -- ':!LICENSE'; then
             echo "Merge-conflict markers found."
             exit 1
           fi
-          if git grep -n -I -E '[[:blank:]]+$' -- '*.md' '*.yml' '*.yaml' '*.json' '*.toml' '*.py'; then
-            echo "Trailing whitespace found."
+
+          # Ignore intentional Markdown hard line breaks (two trailing spaces).
+          if git grep -n -I -E '[[:blank:]]+$' -- '*.yml' '*.yaml' '*.json' '*.toml' '*.py' || \
+             git grep -n -I -E '[[:blank:]]{3,}$' -- '*.md'; then
+            echo "Unexpected trailing whitespace found."
             exit 1
           fi
 
