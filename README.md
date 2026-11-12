@@ -17,6 +17,8 @@ Only add an agent to the Releases section after its implementation and validatio
 [![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
+<img src="assets/ops-by-agent-social-preview.png" alt="Ops by Agent — building AI agents for real-world operations engineering" width="100%" />
+
 [**Follow the build on LinkedIn**](https://www.linkedin.com/in/amitops) · [**Explore the engineering standards**](docs/standards/PRODUCTION-READINESS.md) · [**Read the contribution guide**](CONTRIBUTING.md)
 
 </div>
