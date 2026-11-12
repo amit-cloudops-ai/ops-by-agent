@@ -1,0 +1,39 @@
+name: Documentation checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  markdown:
+    name: Markdown and repository hygiene
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Check trailing whitespace and merge markers
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git grep -n -I -E '^(<<<<<<< |=======|>>>>>>> )' -- ':!LICENSE'; then
+            echo "Merge-conflict markers found."
+            exit 1
+          fi
+          if git grep -n -I -E '[[:blank:]]+$' -- '*.md' '*.yml' '*.yaml' '*.json' '*.toml' '*.py'; then
+            echo "Trailing whitespace found."
+            exit 1
+          fi
+
+      - name: Check required root documents
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in README.md LICENSE CONTRIBUTING.md CODE_OF_CONDUCT.md SECURITY.md CHANGELOG.md; do
+            test -s "$file" || { echo "Missing or empty: $file"; exit 1; }
+          done
