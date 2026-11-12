@@ -10,21 +10,15 @@ https://github.com/amit-cloudops-ai/ops-by-agent
 
 **The repository is the source of truth. Do not rely on previous ChatGPT conversation history.**
 
-Before project work, read:
-1. `README.md`
-2. `docs/programme/PROGRAMME-OVERVIEW.md`
-3. `docs/programme/MASTER-ROADMAP.md`
-4. `docs/programme/TECHNICAL-DECISIONS.md`
-5. `docs/programme/BUILD-CADENCE.md`
-6. `docs/architecture/SYSTEM-ARCHITECTURE.md`
-7. Relevant files in `docs/architecture/`, `docs/standards/` and `docs/operations/`
-8. The selected project's approval record, plan, handoff, status, testing, deployment, cost and next-steps documents.
+Read the root `README.md`, then the programme overview, technical decisions, build cadence, shared architecture and the relevant security, testing, production-readiness, AWS cost, deployment and teardown standards.
+
+For the first build, the selected candidate is K01 — Cluster Intelligence Agent. Do not assume implementation scope is approved merely because the programme is approved. First prepare a concise K01 project brief, alternatives/differentiation assessment, AWS architecture, cost estimate, acceptance criteria and test/evaluation plan. Wait for explicit project approval before code changes or AWS provisioning.
 
 The programme builds AI agents for real operational engineering. Kubernetes is the first domain. AWS is the deployment/validation target; Amazon Bedrock is the preferred inference service subject to project-specific model, region, security and cost checks.
 
-Do not assume any planned project is approved. Do not provision, modify or delete AWS resources without explicit project-specific approval and a reviewed cost estimate. Never commit credentials.
+Local development and tests are useful, but they do not replace AWS integration and operational validation. Do not provision, modify or delete AWS resources without explicit project-specific approval and a reviewed cost estimate. Never commit credentials.
 
-Your first response should summarize repository project status and identify the next concrete task from the project's handoff. Do not restart research or create another planning checklist if the repository already answers it.
+Your first response should summarize the repository's current state and identify the next concrete step. Do not restart broad research or create another planning checklist where the repository already supplies the answer.
 
 ## Before ending a project chat
 
