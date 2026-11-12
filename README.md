@@ -17,7 +17,7 @@ Only add an agent to the Releases section after its implementation and validatio
 [![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-[**Follow the build on LinkedIn**](https://www.linkedin.com/in/amit-cloudops-ai/) · [**Explore the engineering standards**](docs/standards/PRODUCTION-READINESS.md) · [**Read the contribution guide**](CONTRIBUTING.md)
+[**Follow the build on LinkedIn**](https://www.linkedin.com/in/amitops) · [**Explore the engineering standards**](docs/standards/PRODUCTION-READINESS.md) · [**Read the contribution guide**](CONTRIBUTING.md)
 
 </div>
 
@@ -150,7 +150,7 @@ Technical feedback, reproducible issues, documentation improvements and thoughtf
 
 **Amit Madakatti** — Cloud & DevOps engineering, AI agents and infrastructure automation.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amit-cloudops-ai/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amitops)
 
 Follow the build-in-public series: **Ops by Agent**.
 
